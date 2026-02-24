@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-do list</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="top">
+            <div class="container">
+                <span class="brand">To-do list</span>
+            </div>
+        </header>
+        <main class="container">
+            <section class="card" aria-label="To-do app">
+                <h1 class="title">To-do list</h1>
+                <form id="todoform" class="form" autocomplete="off">
+                    <label class="sr-only" for="taskinput">New task</label>
+                    <input
+                    id="taskinput"
+                    class="input"
+                    type="text"
+                    placeholder="New task"/>
+                    <button class="btn" type="submit">Add</button>
+                </form>
+                <ul id="todolist" class="list" aria-label="Tasks"></ul>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
